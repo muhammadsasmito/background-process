@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get "/process", to: "process#index"
   post "/run_process", to: "process#submit_process"
 
+  root to: "process#index"
+
 end
